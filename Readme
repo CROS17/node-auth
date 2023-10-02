@@ -1,0 +1,28 @@
+##Initialize the tsconfig file
+the file `npm run tsc -- --init`
+evitar transpilar `npm i ts-node -D`
+
+##install package express
+the package `npm install @types/express -D`
+the package `npm install express typescript @types/express @types/cors --save`
+the package `npm install dotenv --save`
+the package `npm install --save @types/nodemon`
+the package `npm install --save sequelize`
+the package `npm install --save mysql2`
+the package `npm i --save-dev @types/bcrypt`
+the package `npm install jsonwebtoken` o `npm i --save-dev @types/jsonwebtoken`
+
+
+##comand docker
+ver todas mis contenedores `docker ps -a`
+iniciar mis contenedores `docker-compose up -d `
+detener mis contenedores `docker stop `
+
+##sequelize migrations
+1. la CLI de Sequelize globalmente en tu máquina `npm install -g sequelize-cli`
+2. Crea una nueva migración ejecutando el siguiente comando `sequelize migration:generate --name create-users-table`.
+Esto creará un archivo de migración en la carpeta migrations con un nombre similar a yyyy-mm-dd-create-users-table.js.
+Para migracion es `sequelize seed:generate --name demo-users`
+3. antes ejecutar el `sequelize init` esto para configurar las migraciones donde apuntar despues ya no
+4. Una vez que hayas modificado el archivo de migración, puedes aplicarla para crear la tabla ejecutando `sequelize db:migrate` y seeder `sequelize db:seed:all`
+
